@@ -1,4 +1,5 @@
-import Image, numpy, math
+from PIL import Image
+import numpy, math
 I = Image.open('lion.jpg')
 I = I.convert('L')
 a = numpy.asarray(I)

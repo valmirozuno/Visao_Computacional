@@ -5,7 +5,7 @@ import math
 
 #passa alta
 
-img = cv.imread('cato.jpg', 0)
+img = cv.imread('dogo.jpg', 0)
 b = np.asarray(img)
 
 filtros = np.zeros(b.shape)
@@ -29,7 +29,7 @@ f_ishift = np.multiply(R, B)
 
 #passa baixa
 
-I = cv.imread('dogo.jpg', 0)
+I = cv.imread('cato.jpg', 0)
 a = np.asarray(I)
 
 filtro = np.zeros(a.shape)
