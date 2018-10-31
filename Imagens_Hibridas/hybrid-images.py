@@ -68,8 +68,8 @@ def testFiltering():
    misc.imsave("sum-of-marilyns.png", numpy.real((highPassedMarilyn + lowPassedMarilyn)/2.0))
 
 if __name__ == "__main__":
-   einstein = ndimage.imread("einstein.png", flatten=True)
-   marilyn = ndimage.imread("marilyn.png", flatten=True)
+   highImage = ndimage.imread("einstein.png", flatten=True)
+   lowImage = ndimage.imread("marilyn.png", flatten=True)
 
-   hybrid = hybridImage(einstein, marilyn, 25, 10)
+   hybrid = hybridImage(highImage, lowImage, 25, 10)
 misc.imsave("marilyn-einstein.png", numpy.real(hybrid))
